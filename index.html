@@ -1,9 +1,340 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Github Hosted Webpage</title>
-</head>
-<body>
+<html><head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117091216-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-117091216-1');
+</script>
+
+	<title>Cyber Buzz</title>
+	<link rel="shortcut icon" type="image" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$(window).scroll(function(){
+	var scroll = $(window).scrollTop();
+	if(scroll>100){
+		$(".nav").css("padding", "10px 80px");
+		$(".nav").css("background-color", "#10bfdeee");
+		/*$(".nav").css("	background-color", "rgba(16, 191, 222, 1")*/
+	}
+	else{
+		$(".nav").css("padding", "30px 80px");
+		$(".nav").css("background-color", "transparent")
+		/*$(".nav").css("background-color", "#10bfde80")*/
+	}
+})
+})
+</script>
+<body>
+<div class="first-big" id="home">
+	<div class="nav" id="#nav-top">
+		<div class="left-nav"><table><tbody>
+		<tr><td><a class="nav-item smoothscroll" href="#home">HOME</a></td>
+		<td><a class="nav-item smoothscroll" href="#about">ABOUT</a></td>
+		<td><a class="nav-item smoothscroll" href="#events">EVENTS</a></td>
+		<td><a class="nav-item smoothscroll" href="#dates">IMPORTANT DATES</a></td>
+		<td><a class="nav-item smoothscroll" href="#team">TEAM</a></td>
+		<td><a class="nav-item smoothscroll" href="#schedule">SCHEDULE</a></td>
+		<td><a class="nav-item smoothscroll" href="teachers.html" target="_blank">OUR MENTORS</td>
+		<td><a class="nav-item smoothscroll" href="#contact">CONTACT</a></td>
+		<td><a class="nav-item" href="https://goo.gl/k8eZXG" target="_blank">REGISTER</a></td>
+		<td><a class="nav-item" href="/prelims" target="_blank">PRELIMS RESULTS</a></td>
+		<!--<td><a class="nav-item" href="prelims.html" target="_blank">PRELIM RESULTS</a></td>-->
+		<td><a class="nav-item right" style= " margin-left: 30px;" href="https://fb.com/amitycyberbuzz" target="_blank"><img src="images/fb.png" style="height: 20px;"></a></td>
+		</tr></tbody></table>
+		</div>
+	</div>
+	<div class="head-info"><p class = "date" style="margin: 0;">MAY 1, 2019</p><div class = "time-info" id="time-set"></div></div>
+</div>
+<div class="second-big" id="about">
+	<div class="img-info"><img src="images/Laptop_Graphic.png" class="img-info-real"></div>
+	<div class="info"><div class="container"><span class = "heading">About Cyber Buzz</span><br><br><br>
+		<span class="info-desc">CyberBuzz is the prestigious tech symposium hosted annually by Amity International School Sector 43, Gurugram. From 4 events to a dozen this event has grown to be a learning experience for techies across Delhi NCR, enhancing their creativity in the field.<br>It is not everyday that Cyber enthusiasts get a Call To Arms. Cyber Buzz 2019 will not be just a test of knowledge, but also of skills in an Open Battlefield.<br>With 14 events covering the wide domain of computers and technology, CyberBuzz XVI will be truly test of the capability and the tech quotient of the participants.<br>Create a world, master another. Capture reality, tweak it later. Create Art, make it functional. From instructing computers to making the best ones, the events leave no aspect of Cyber age untouched.</div>
+	</span>
+	</div>
+</div>
+
+<div class="third-big">
+	<div class="inner-third" align="center">
+		<span class="heading">Our Events</span><br><br>
+		<p class="events-info">Create a world, master another. Capture reality, tweak it later. Create Art, make it functional. From instructing computers to making the best ones, the events leave no aspect of Cyber age untouched.</p><br>
+		
+		<div class="eventbox" id="events">
+
+			<div class="box" id="hv-1"><img src="images/event-logos/blitzkrieg.png" class="logo"><div class="hov-con"><div class="text">Game Development</div></div>
+				<!-- modal-->
+				<div class="modal" id="myModal-01">
+					<div class="modal-content">
+						<p class="tagline">"Remember, your mind is the best weapon you have."</p>
+						<p class = "evnt-info">Blitzkrieg is an open game development event where you have to design a complete game on the given theme.<br>
+							Prelim topics will be out by 12th April on the website and Facebook page, which are to be submitted online. <br>
+							Top 6 teams will be selected for the final day, participants are required to bring their laptops. <br>
+							Eligibility: IX - XII<br>
+							Software: Open.</p>
+						<p class = "team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+					</div>
+				</div>
+				<!--modal closes-->
+			</div>
+			<div class="box" id="hv-2"><img src="images/event-logos/buzzer.jpg" class="logo"><div class="hov-con"><div class="text">Open Quiz</div></div>
+				<div class="modal" id="myModal-02">
+					<div class="modal-content">
+						<p class="tagline">"Be prepared for anything, and everything, from anywhere and everywhere…"</p>
+						<p class="evnt-info">Nothing is True, Everything is Permitted.<br>
+						Except of course, cheating – or you will be evicted.<br>
+						Written prelims of 30 minutes, followed by 6 teams in the on-stage finals. <br>
+						Eligibility: Open</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+					</div>
+				</div>
+			</div>
+			<div class="box" id="hv-3"><img src="images/event-logos/surprise.jpg" class="logo"><div class="hov-con"><div class="text">Surprise</div></div>
+				<div class="modal" id="myModal-03">
+					<div class="modal-content">
+						<p class="tagline">"Try us, We may Surprise you."</p>
+						<p class="evnt-info">Logic and basics is all we need to survive in life; and in this event. What do you do to pass time, Programming ? <br>
+						Eligibility: Open.</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+					</div>
+				</div>
+			</div>
+			<div class="box" id="hv-4"><img src="images/event-logos/chalchitra.jpg" class="logo"><div class="hov-con"><div class="text">Moviemaking</div></div>
+				<div class="modal" id="myModal-04">
+					<div class="modal-content">
+						<p class="tagline">"Everybody is special. But not today, because today, we give you the story."</p>
+						<p class="evnt-info">Participants have to make a “MUSIC VIDEO” for 2-4 minutes.
+
+	<br>Only original and fresh content will be accepted, the usage of English or Hindi song both are permitted. 
+	<br>Open choice for accessories and software but it has to be submitted only in MP4 format.
+	<br>Video has to be uploaded to Youtube or drive and the link to be sent to: amitycyberbuzz@gmail.com AND prathamgurgaon@gmail.com  
+	<br>LAST DATE OF SUBMISSION-22nd April 2018 MIDNIGHT 
+	<br>No of Teams/School – 1                                              
+	<br>No. of Participants/Team – 2
+	<br>Eligibility – IX-XII
+	<br>Hardware/ Software- Any 
+	<br>Eligibility: IX - XII
+	<br><b>Full information given in event guide</b></p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+					</div>
+				</div>
+			</div>
+			<div class="box" id="hv-5"><img src="images/event-logos/clickhe.png" class="logo"><div class="hov-con"><div class="text">Photography</div></div>
+				<div class="modal" id="myModal-05">
+					<div class="modal-content">
+						<p class="tagline">“Pics or it didnt happen”</p>
+						<p class="evnt-info">For the prelim round, three pictures need to be submitted online to amitycyberbuzz@gmail.com on a topic to be disclosed later on the website as well as the Facebook page. <br>
+						1 hour final Photography round on the final day. 
+	Please make sure to bring your own camera, SD card, tripod, pen drive and any other equipment you think you may require. <br>
+						
+						Eligibility: Open</p>
+						<p class="team-eligibility">1 TEAM OF 1 MEMBER PER SCHOOL</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="box" id="hv-7"><img src="images/event-logos/evolutioners.jpg" class="logo"><div class="hov-con"><div class="text">Scratch</div></div>
+				<div class="modal" id="myModal-07">
+					<div class="modal-content">
+						<p class="tagline">“Words are what we think, Stories are what we link”</p>
+						<p class="evnt-info">Topic: “Any Game in a retro style”<br>
+						Live,<br>
+						Create,<br>
+						Tell a story,<br>
+						Repeat.<br>
+						
+						The team is expected to create a game for the prelims and send the entries by the 22nd of April. Only selected teams will come here and battle out for the prizes and would be expected to create a story on the topic given on the spot.</p>
+						Eligibility – VI-VII<br>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+					</div>
+				</div>
+			</div>
+			<div class="box" id="hv-8"><img src="images/event-logos/programming.jpg" class="logo"><div class="hov-con"><div class="text">Programming</div></div>
+				<div class="modal" id="myModal-08">
+					<div class="modal-content">
+						<p class="tagline">“Talk is cheap,  show us the code ”</p>
+						<p class="evnt-info">This isn’t your normal programming quiz where you are asked to solve and write the problems. Here, you will be tested on your speed, coding and gambling skills that make one a true programmer, yes they do!<br>
+						Language – Python  <br>
+						
+						Eligibility – IX-XII</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+					</div>
+				</div>
+			</div>
+			<div class="box" id="hv-9"><img src="images/event-logos/opus.png" class="logo"><div class="hov-con"><div class="text">Web Development</div></div>
+				<div class="modal" id="myModal-09">
+					<div class="modal-content">
+						<p class="tagline">“What separates design from art is that design is meant to be… functional.”</p>
+						<p class="evnt-info">Upload the entry for the prelims on Google Drive/Dropbox and email the link to amitycyberbuzz@gmail.com. 
+ <br>
+						Top 6 teams on the basis of the entries will be selected for the final round. Besides the originality and appeal of the design, functionality and creativity will be fetching points.<br>
+
+                        Systems will be provided for the finals. Participants are requested to bring empty USB drives for transferring files between systems during the event.<br>
+                        *Participants are advised to refrain from using templates and copying code.<br>  
+
+						Languages: HTML, CSS, Javascript, Jquery.<br>
+						Software provided: Sublime Text , Adobe Photoshop<br>
+						Eligibility: IX - XII</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+					</div>
+				</div>
+			</div>
+			<div class="box" id="hv-10"><img src="images/event-logos/playgue.jpg" class="logo"><div class="hov-con"><div class="text">Gaming</div></div>
+				<div class="modal" id="myModal-10">
+					<div class="modal-content">
+						<p class="tagline">" "Target acquired. Alpha Mike Foxtrot.” Think about it."</p>
+						<p class="evnt-info">You game, you win. <br>
+						..Well, at least you try to! <br>
+						Eligibility-Open <br>
+						<p class="team-eligibility">1 TEAM OF 1 MEMBER PER SCHOOL</p>
+						</div>
+				</div>
+			</div>
+			<div class="box" id="hv-11"><img src="images/event-logos/prezipitate.png" class="logo"><div class="hov-con"><div class="text">Junior Presentation</div></div>
+				<div class="modal" id="myModal-11">
+					<div class="modal-content">
+						<p class="tagline">“Ctrl + M…. and here we go!”</p>
+						<p class="evnt-info">Students will make a 3 min presentation and send it to us by 22nd of April. Only selected teams will come here and battle out for the prizes. Anything except clip art and tools of powerpoint are not allowed. Videos should not be used. <br>
+						Topic - “  ” <br>
+						Eligibility – IV-V<br>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBER PER SCHOOL</p>
+						</div>
+				</div>
+			</div>
+			<div class="box" id="hv-13"><img src="images/event-logos/gd.jpg" class="logo"><div class="hov-con"><div class="text">Group Discussion</div></div>
+				<div class="modal" id="myModal-13">
+					<div class="modal-content">
+						<p class="tagline">“And who are you, the proud Lord said, that I must bow so low?” </p>
+						<p class="evnt-info">The intellectual depth of Mike and the aggressiveness of Harvey, clashed together in one event. Challengers will battle out in three rounds, with topics given on the spot.<br>
+						Don’t prepare. <br>
+						Eligibility – IX-XII<br></p>
+						<p class="team-eligibility">1 TEAM OF 1 MEMBER PER SCHOOL</p>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="fourth-big" id = "dates" align="center">
+	<p class="heading">Important Dates</p>
+	<p class="imp-info">The buzz won't be just the same, but better and bigger than ever.<br>All only if you know what it means to punctual, and deadline-fearing warrior!</p><p class="btn-btm"></p>
+	<img src="images/Important_dates-1111.png" class="imp-img">
+</div>
+
+<div class="skew-div"></div>
+
+<div class="fifth-big" align="center">
+	<p class="heading" id = "team">Our Team</p>
+	<p class="imp-info">All the ones who make Cyber Buzz what it is!<br> Never underestimate those who you don't know, as they might be the ones deciding the winners, and not so winning winners!</p>
+	<p class="btn-btm"></p>
+
+
+	<div class="teambox">
+		<div class="tbox"><img src="images/memb/shubh.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">mehtani.shubh@gmail.com</div></div><span class = "mem-name-end">Shubh Mehtani</span><br><span class="mem-evnt">Pla(y)gue</span></div>
+		<div class="tbox"><img src="images/memb/tehlan.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">adityatehlan@gmail.com</div></div><span class = "mem-name-end">Aditya Tehlan</span><br><span class="mem-evnt">Pla(y)gue</span></div>
+		<div class="tbox"><img src="images/memb/chull.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">saansharora3@gmail.com</div></div><span class = "mem-name-end">Saansh Arora</span><br><span class="mem-evnt">Logic Gates</span></div>
+		<div class="tbox"><img src="images/memb/rathore.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">adityarathore@gmail.com</div></div><span class = "mem-name-end">Aditya Rathore</span><br><span class="mem-evnt">Trial-By-Combat</span></div>
+		<div class="tbox"><img src="images/memb/nalini.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">adinalini2000@gmail.com</div></div><span class = "mem-name-end">Aditya Nalini</span><br><span class="mem-evnt">BlitzKrieg</span></div>
+		<div class="tbox"><img src="images/memb/ranade.JPG" class="memb"><div class="mem">
+		<div class = "mem-name">amshtandon@gmail.com</div></div><span class = "mem-name-end">Ansh Tandon</span><br><span class="mem-evnt">Buzz-er</span></div>
+		<div class="tbox"><img src="images/memb/rana.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">dhruvansh.rana@gmail.com</div></div><span class = "mem-name-end">Dhruvansh Rana</span><br><span class="mem-evnt">Pla(y)gue</span></div>
+		<div class="tbox"><img src="images/memb/kartikeya.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">kartikeya1019@gmail.com</div></div><span class = "mem-name-end">Kartikeya Purohit</span><br><span class="mem-evnt">Opus</span></div>
+		<div class="tbox"><img src="images/memb/kshitijaa.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">jaglan.kshitijaa2@gmail.com</div></div><span class = "mem-name-end">Kshitijaa Jaglan</span><br><span class="mem-evnt">Flick</span></div>
+		<div class="tbox"><img src="images/memb/kachhap.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">business.adityak@gmail.com</div></div><span class = "mem-name-end">Aditya Kachhap</span><br><span class="mem-evnt">Trial By Combat</span></div>
+		<div class="tbox"><img src="images/memb/rounak.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">tushar.dhenwal@gmail.com</div></div><span class = "mem-name-end">Tushar Dhenwal</span><br><span class="mem-evnt">Cli(k)che</span></div>
+		<div class="tbox"><img src="images/memb/saksham.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">manaktala.saksham@gmail.com</div></div><span class = "mem-name-end">Saksham Manaktala</span><br><span class="mem-evnt">C1ue5</span></div>
+		<div class="tbox"><img src="images/memb/shashank.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">shashankc1705@gmail.com</div></div><span class = "mem-name-end">Shashank Aggarwal</span><br><span class="mem-evnt">Flick</span></div>
+		<div class="tbox"><img src="images/memb/shashwat.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">shashwats09@gmail.com</div></div><span class = "mem-name-end">Shashwat Sharma</span><br><span class="mem-evnt">Opus</span></div>
+		<div class="tbox"><img src="images/memb/shehul.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">kaulshehul@hotmail.com</div></div><span class = "mem-name-end">Shehul Koul</span><br><span class="mem-evnt">Cli(k)che</span></div>
+		<div class="tbox"><img src="images/memb/jai.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">jaimehtani26@gmail.com</div></div><span class = "mem-name-end">Jai Mehtani</span><br><span class="mem-evnt">Pla(y)gue</span></div>
+		<div class="tbox"><img src="images/memb/akshat.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">akshatsax001@gmail.com</div></div><span class = "mem-name-end">Akshat Saxena</span><br><span class="mem-evnt">C1ue5</span></div>
+		<div class="tbox"><img src="images/memb/bhuvan.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">bhuvanlakhera23@gmail.com</div></div><span class = "mem-name-end">Bhuvan Lakhera</span><br><span class="mem-evnt">Clue5</span></div>
+	</div>
+
+</div>
+
+<div class="schedule" id = "schedule" align="center">
+	<p class="heading-sch">Our Schedule</p>
+	<img src="images/finale.png" class="sch-img">
+</div>
+
+
+<div class="footer" id="contact">
+	<div class="footer-table"><table>
+		<tbody>
+			<tr><td class="ftr-data">Venue:</td><td class="ftr-data">Amity International School<br>Power Grid Complex<br>Sector-43, Gurugram<br></td></tr>
+			<tr><td class="ftr-data">Timings:</td><td class="ftr-data">8AM to 3PM</td></tr>
+		</tbody>
+	</table></div>
+
+	<div class="links">Email : amitycyberbuzz@gmail.com<br> Facebook: <a class = "link-fb" href="https://fb.com/amitycyberbuzz">fb.com/amitycyberbuzz</a><br>
+		Official Invite: <a class="link-fb" href="https://goo.gl/XEuRHh">CyberBuzz2019</a>
+	</div>
+	<div class="last-logo"><img src="images/logo.png" class="last-logo-img"></div>
+</div>
+	
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kryogenix.org/code/browser/smoothscroll/smoothscroll.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 1, 2019 8:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("time-set").innerHTML = days + ":" + hours + ":"
+    + minutes + ":" + seconds;
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("time-set").innerHTML = "the Buzz is on...";
+    }
+}, 1000);
+</script>
 </body>
 </html>
