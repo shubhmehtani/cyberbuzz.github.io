@@ -1,61 +1,69 @@
 window.onload = function(){
 
 
-document.getElementById("hv-1").onclick = function() {
-    document.getElementById('myModal-01').style.display = "block";
-}
+  document.getElementById("hv-1").onclick = function() {
+      document.getElementById('myModal-01').style.display = "block";
+  }
 
-document.getElementById("hv-2").onclick = function() {
-    document.getElementById('myModal-02').style.display = "block";
-}
+  document.getElementById("hv-2").onclick = function() {
+      document.getElementById('myModal-02').style.display = "block";
+  }
 
-document.getElementById("hv-3").onclick = function() {
-   document.getElementById('myModal-03').style.display = "block";
-}
+  document.getElementById("hv-3").onclick = function() {
+     document.getElementById('myModal-03').style.display = "block";
+  }
 
-document.getElementById("hv-4").onclick = function() {
-    document.getElementById('myModal-04').style.display = "block";
-}
+  document.getElementById("hv-4").onclick = function() {
+      document.getElementById('myModal-04').style.display = "block";
+  }
 
-document.getElementById("hv-5").onclick = function() {
-    document.getElementById('myModal-05').style.display = "block";
-}
+  document.getElementById("hv-5").onclick = function() {
+      document.getElementById('myModal-05').style.display = "block";
+  }
 
-document.getElementById("hv-6").onclick = function() {
-    document.getElementById('myModal-06').style.display = "block";
-}
+  document.getElementById("hv-6").onclick = function() {
+      document.getElementById('myModal-06').style.display = "block";
+  }
 
-document.getElementById("hv-7").onclick = function() {
-    document.getElementById('myModal-07').style.display = "block";
-}
+  document.getElementById("hv-7").onclick = function() {
+      document.getElementById('myModal-07').style.display = "block";
+  }
 
-document.getElementById("hv-8").onclick = function() {
-    document.getElementById('myModal-08').style.display = "block";
-}
+  document.getElementById("hv-8").onclick = function() {
+      document.getElementById('myModal-08').style.display = "block";
+  }
 
-document.getElementById("hv-9").onclick = function() {
-    document.getElementById('myModal-09').style.display = "block";
-}
+  document.getElementById("hv-9").onclick = function() {
+      document.getElementById('myModal-09').style.display = "block";
+  }
 
-document.getElementById("hv-10").onclick = function() {
-    document.getElementById('myModal-10').style.display = "block";
-}
+  document.getElementById("hv-10").onclick = function() {
+      document.getElementById('myModal-10').style.display = "block";
+  }
 
-document.getElementById("hv-11").onclick = function() {
-    document.getElementById('myModal-11').style.display = "block";
-}
+  document.getElementById("hv-11").onclick = function() {
+      document.getElementById('myModal-11').style.display = "block";
+  }
 
-document.getElementById("hv-13").onclick = function() {
-    document.getElementById('myModal-13').style.display = "block";
-}
+  document.getElementById("hv-13").onclick = function() {
+      document.getElementById('myModal-13').style.display = "block";
+  }
 
-document.getElementById("hv-14").onclick = function() {
-    document.getElementById('myModal-14').style.display = "block";
-}
+  document.getElementById("hv-14").onclick = function() {
+      document.getElementById('myModal-14').style.display = "block";
+  }
 
-document.getElementById("hv-15").onclick = function() {
-    document.getElementById('myModal-15').style.display = "block";
-}
+  
+
+
+
+
+  document.getElementById("closebtn").onclick = function() {
+      console.log(document.getElementById('myModal-01').style.display)
+      document.getElementById('myModal-01').style.display = "none";
+      console.log(document.getElementById('myModal-01').style.display)
+
+  }
 
 
 
