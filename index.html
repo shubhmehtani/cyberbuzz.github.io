@@ -17,16 +17,30 @@
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <script type="text/javascript">
+  console.log($(window).width())
+  console.log($(window).height())
 	$(document).ready(function(){
 	$(window).scroll(function(){
 	var scroll = $(window).scrollTop();
 	if(scroll>100){
-		$(".nav").css("padding", "10px 80px");
+    if(($(window).width())<600){
+      $(".nav").css("padding", "10px 0px");
+      console.log("hi")
+    } else {
+      $(".nav").css("padding", "10px 80px");
+    }
+
 		$(".nav").css("background-color", "#2c3e50");
 		/*$(".nav").css("	background-color", "rgba(16, 191, 222, 1")*/
 	}
 	else{
-		$(".nav").css("padding", "30px 80px");
+
+    if(($(window).width())<600){
+      $(".nav").css("padding", "30px 0px");
+      console.log("hi")
+    } else {
+      $(".nav").css("padding", "30px 80px");
+    }
 		$(".nav").css("background-color", "transparent")
 		/*$(".nav").css("background-color", "#10bfde80")*/
 	}
