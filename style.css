@@ -1,5 +1,6 @@
 /* color palletes https://coolors.co/10bfde-f7f8fa-34353a-646567-2f8ed2 */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
 body{
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
@@ -133,7 +134,7 @@ body{
 }
 .btn-btm{
 	margin-top: 0;
-	background-color: #27c4e0;
+	background-color: #2c3e50;
 	height: 5px;
 	width: 5%;
 }
@@ -306,6 +307,10 @@ body{
 	position: relative;
 	margin: 4px 2px 20px 2px;
 	width: 200px;
+}
+.designation{
+font-family: 'Roboto', sans-serif;
+font-size: 28px
 }
 .memb{
 	width: 200px;
