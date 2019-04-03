@@ -45,6 +45,10 @@ window.onload = function(){
       document.getElementById('myModal-11').style.display = "block";
   }
 
+  document.getElementById("hv-12").onclick = function() {
+      document.getElementById('myModal-12').style.display = "block";
+  }
+
   document.getElementById("hv-13").onclick = function() {
       document.getElementById('myModal-13').style.display = "block";
   }
@@ -52,20 +56,6 @@ window.onload = function(){
   document.getElementById("hv-14").onclick = function() {
       document.getElementById('myModal-14').style.display = "block";
   }
-
-  
-
-
-
-
-  document.getElementById("closebtn").onclick = function() {
-      console.log(document.getElementById('myModal-01').style.display)
-      document.getElementById('myModal-01').style.display = "none";
-      console.log(document.getElementById('myModal-01').style.display)
-
-  }
-
-
 
 
 
@@ -104,14 +94,14 @@ window.onclick = function(event) {
     else if (event.target == document.getElementById('myModal-11')) {
        document.getElementById('myModal-11').style.display = "none";
     }
+    else if (event.target == document.getElementById('myModal-12')) {
+       document.getElementById('myModal-12').style.display = "none";
+    }
     else if (event.target == document.getElementById('myModal-13')) {
        document.getElementById('myModal-13').style.display = "none";
     }
     else if (event.target == document.getElementById('myModal-14')) {
        document.getElementById('myModal-14').style.display = "none";
-    }
-    else if (event.target == document.getElementById('myModal-15')) {
-       document.getElementById('myModal-15').style.display = "none";
     }
 }
 
