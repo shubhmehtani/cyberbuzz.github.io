@@ -17,13 +17,13 @@
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <script type="text/javascript">
-  console.log($(window).width())
-  console.log($(window).height())
+
+  var widthdocument = $(document).width()
 	$(document).ready(function(){
 	$(window).scroll(function(){
 	var scroll = $(window).scrollTop();
 	if(scroll>100){
-    if(($(window).width())<600){
+    if(widthdocument<600){
       $(".nav").css("padding", "10px 0px");
       console.log("hi")
     } else {
@@ -35,7 +35,7 @@
 	}
 	else{
 
-    if(($(window).width())<600){
+    if(widthdocument<600){
       $(".nav").css("padding", "30px 0px");
       console.log("hi")
     } else {
