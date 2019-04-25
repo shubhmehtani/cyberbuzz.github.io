@@ -2,17 +2,21 @@ body{
     padding-top: 5.5vh;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    background-color: #DCD6F7;
+   
 }
 .heading{
     text-align: center;
     font-size: 5.2vh;
     margin: auto;
     font-weight: 300;
+    background-color: #46B1C9;
+    height: 50px;
 }
 .top-head{
     color: #222;
     padding: 0 5px 0 5px;
-    border-bottom: solid 1px #10bfde;
+    border-bottom: solid 1px ;
 }
 .results-main{
     padding: 8vh 50px 0 50px;
@@ -36,6 +40,7 @@ body{
     font-weight: 700;
 }
 .event-winners{
-    font-size: 2.5vh;
+    font-size: 3vh;
+
 }
 
