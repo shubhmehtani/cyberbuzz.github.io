@@ -1,48 +1,37 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html><head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script src="jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117091216-1"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-		crossorigin="anonymous"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'UA-117091216-1');
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(window).scroll(function () {
-				var scroll = $(window).scrollTop();
-				if (scroll > 100) {
-					$(".nav").css("padding-top", "10px");
-					$(".nav").css("background-color", "#2c3e50");
-					/*$(".nav").css("	background-color", "rgba(16, 191, 222, 1")*/
-				}
-				else {
-					$(".nav").css("padding-top", "30px");
-					$(".nav").css("background-color", "transparent")
-					/*$(".nav").css("background-color", "#10bfde80")*/
-				}
-			});
-		})
-	</script>
+  <script src="jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117091216-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-117091216-1');
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$(window).scroll(function(){
+	var scroll = $(window).scrollTop();
+	if(scroll>100){
+		$(".nav").css("padding-top", "10px");
+		$(".nav").css("background-color", "#2c3e50");
+		/*$(".nav").css("	background-color", "rgba(16, 191, 222, 1")*/
+	}
+	else{
+		$(".nav").css("padding-top", "30px");
+		$(".nav").css("background-color", "transparent")
+		/*$(".nav").css("background-color", "#10bfde80")*/
+	}
+})
+})
+</script>
 
 	<title>Cyber Buzz</title>
 	<link rel="shortcut icon" type="image" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
 <body>
@@ -64,266 +53,172 @@
 		<!--<td><a class="nav-item" href="prelims.html" target="_blank">PRELIM RESULTS</a></td>-->
 		<td><a class="nav-item right" style= " margin-left: 30px;" href="https://fb.com/amitycyberbuzz" target="_blank"><img src="images/fb.png" style="height: 20px;"></a></td>
 		</tr></tbody></table>
-	<div class="first-big" id="home">
-		<div class="nav" id="#nav-top">
-			<div class="left-nav">
-				<table>
-					<tbody>
-						<tr>
-							<td><img src="images/schoollogo.png" style="height: 70px; padding-right: 40px"></td>
-							<td><a class="nav-item smoothscroll" href="#home">HOME</a></td>
-							<td><a class="nav-item smoothscroll" href="#about">ABOUT</a></td>
-							<td><a class="nav-item smoothscroll" href="#events">EVENTS</a></td>
-							<td><a class="nav-item smoothscroll" href="#dates">IMPORTANT DATES</a></td>
-							<td><a class="nav-item smoothscroll" href="#team">TEAM</a></td>
-							<td><a class="nav-item smoothscroll" href="#schedule">SCHEDULE</a></td>
-							<td><a class="nav-item smoothscroll" href="teachers.html" target="_blank">OUR MENTORS</td>
-							<td><a class="nav-item smoothscroll" href="#contact">CONTACT</a></td>
-							<td><a class="nav-item" href="https://bit.ly/2xZoaFX" target="_blank">REGISTER</a></td>
-							<!--		<td><a class="nav-item" href="/prelims" target="_blank">PRELIMS RESULTS</a></td>  -->
-							<!--<td><a class="nav-item" href="prelims.html" target="_blank">PRELIM RESULTS</a></td>-->
-							<td><a class="nav-item right" style=" margin-left: 30px;"
-									href="https://fb.com/amitycyberbuzz" target="_blank"><img src="images/fb.png"
-										style="height: 20px;"></a></td>
-						</tr>
-					</tbody>
-				</table>
+		</div>
+	</div>
+	<div class="head-info"><p class = "date" style="margin: 0;">MAY 23, 2020</p><div class = "time-info" id="time-set"></div></div>
+</div>
+<div class="second-big" id="about">
+	<div class="img-info"><img src="images/Laptop_Graphic.png" class="img-info-real"></div>
+	<div class="info"><div class="container"><span class = "heading">About Cyber Buzz</span><br><br><br>
+		<span class="info-desc">CyberBuzz is the prestigious tech symposium hosted annually by Amity International School Sector 43, Gurugram. From 4 events to a dozen this event has grown to be a learning experience for techies across Delhi NCR, enhancing their creativity in the field.<br>It is not everyday that Cyber enthusiasts get a Call To Arms. Cyber Buzz 2020 will not be just a test of knowledge, but also of skills in an Open Battlefield.<br>With 8	 events covering the wide domain of computers and technology, CyberBuzz XVII will be truly test of the capability and the tech quotient of the participants.</div>
+	</span>
+	</div>
+</div>
+
+
+<div class="third-big">
+	<div class="inner-third">
+		<span class="heading">Our Events</span><br><br>
+		<p style="font-size: 15px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Create a world, master another. Capture reality, tweak it later. Create Art, make it functional. From instructing computers to making the best ones, the events leave no aspect of Cyber age untouched.</p><br>
+
+		<div class="eventbox" id="events">
+
+			<div class="box" id="hv-1"><img src="images/event-logos/programming.jpg" class="logo"><div class="hov-con"><div class="text">Programming</div></div>
+				<!-- modal-->
+				<div class="modal" id="myModal-01">
+					<div class="modal-content">
+						<p class="tagline">“Talk is cheap,  show us the code ”</p>
+						<p class="evnt-info">This isn’t your normal programming quiz where you are asked to solve and write the problems. Here, you will be tested on your speed, coding that make one a true programmer, yes, they do!<br>
+							Round 1 of 30 minutes will happen at 11 AM on 23 rd May.<br>
+							Round 2 of 30 minutes will happen at 11:30 AM on 23 rd May between shortlisted teams of Round 1.<br>
+							The link for Round 1 will be shared on 23 rd May at 10:50 on the facebook page. Round 2 link will be shared with the Round 1 shortlisted teams only.
+							Language – Python  <br>
+							Eligibility – XI-XII<br></p>
+						<p class="team-eligibility">No of Teams/School – 1 <br>
+							No. of Participants/Team – 1</p>
+					</div>
+				</div>
+				<!--modal closes-->
 			</div>
-		</div>
-		<div class="head-info">
-			<p class="date" style="margin: 0;">MAY 23, 2020</p>
-			<div class="time-info" id="time-set"></div>
-		</div>
-	</div>
-	<div class="second-big" id="about">
-		<div class="img-info"><img src="images/Laptop_Graphic.png" class="img-info-real"></div>
-		<div class="info">
-			<div class="container"><span class="heading">About Cyber Buzz</span><br><br><br>
-				<span class="info-desc">CyberBuzz is the prestigious tech symposium hosted annually by Amity
-					International School Sector 43, Gurugram. From 4 events to a dozen this event has grown to be a
-					learning experience for techies across Delhi NCR, enhancing their creativity in the field.<br>It is
-					not everyday that Cyber enthusiasts get a Call To Arms. Cyber Buzz 2020 will not be just a test of
-					knowledge, but also of skills in an Open Battlefield.<br>With 8 events covering the wide domain of
-					computers and technology, CyberBuzz XVII will be truly test of the capability and the tech quotient
-					of the participants.</div>
-			</span>
-		</div>
-	</div>
+			<div class="box" id="hv-2"><img src="images/event-logos/paint3D.jpeg" class="logo"><div class="hov-con"><div class="text">Paint 3D</div></div>
+				<div class="modal" id="myModal-02">
+					<div class="modal-content">
+						<p class="tagline">“Life is a big canvas throw all the paint you can on it.”</p>
+						<p class="evnt-info">Students will make a drawing in MS Paint. Convert your file into JPEG and will send that on mmunjal@aisg43.amity.edu. Downloaded material from Internet is strictly prohibited. <br>
+							<b><u>Topic</u>: My Dream World</b><br>
+							Eligibility: I-II<br></p>
+						<p class="team-eligibility">No of Teams/School – 1 <br> 
+							No. of Participants/Team – 1</p>
 
-
-	<div class="third-big">
-		<div class="inner-third">
-			<span class="heading">Our Events</span><br><br>
-			<p style="font-size: 15px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Create a
-				world, master another. Capture reality, tweak it later. Create Art, make it functional. From instructing
-				computers to making the best ones, the events leave no aspect of Cyber age untouched.</p><br>
-
-			<div class="eventbox" id="events">
-
-				<div class="box" id="hv-1"><img src="images/event-logos/programming.jpg" class="logo">
-					<div class="hov-con">
-						<div class="text">Programming</div>
-					</div>
-					<!-- modal-->
-					<div class="modal" id="myModal-01">
-						<div class="modal-content">
-							<p class="tagline">“Talk is cheap, show us the code ”</p>
-							<p class="evnt-info">This isn’t your normal programming quiz where you are asked to solve
-								and write the problems. Here, you will be tested on your speed, coding that make one a
-								true programmer, yes, they do!<br>
-								Round 1 of 30 minutes will happen at 11 AM on 23 rd May.<br>
-								Round 2 of 30 minutes will happen at 11:30 AM on 23 rd May between shortlisted teams of
-								Round 1.<br>
-								The link for Round 1 will be shared on 23 rd May at 10:50 on the facebook page. Round 2
-								link will be shared with the Round 1 shortlisted teams only.
-								Language – Python <br>
-								Eligibility – XI-XII<br></p>
-							<p class="team-eligibility">No of Teams/School – 1 <br>
-								No. of Participants/Team – 1</p>
-						</div>
-					</div>
-					<!--modal closes-->
-				</div>
-				<div class="box" id="hv-2"><img src="images/event-logos/paint3D.jpeg" class="logo">
-					<div class="hov-con">
-						<div class="text">Paint 3D</div>
-					</div>
-					<div class="modal" id="myModal-02">
-						<div class="modal-content">
-							<p class="tagline">“Life is a big canvas throw all the paint you can on it.”</p>
-							<p class="evnt-info">Students will make a drawing in MS Paint. Convert your file into JPEG
-								and will send that on mmunjal@aisg43.amity.edu. Downloaded material from Internet is
-								strictly prohibited. <br>
-								<b><u>Topic</u>: My Dream World</b><br>
-								Eligibility: I-II<br></p>
-							<p class="team-eligibility">No of Teams/School – 1 <br>
-								No. of Participants/Team – 1</p>
-
-						</div>
 					</div>
 				</div>
-
-				<div class="box" id="hv-4"><img src="images/event-logos/logo.jpeg" class="logo">
-					<div class="hov-con">
-						<div class="text">LOGO</div>
-					</div>
-					<div class="modal" id="myModal-04">
-						<div class="modal-content">
-							<p class="tagline">“Programming isn’t about what you know; it’s about what you can figure
-								out”</p>
-							<p class="evnt-info">Students will create a graphic using MSW Logo. Convert your file into
-								JPEG and will send that on mpasricha@aisg43.amity.edu.<br>
-								<b><u>Topic</u>: My City</b><br>
-								Eligibility: III-IV
-							</p>
-							<p class="team-eligibility">No of Teams/School – 1 <br> No. of Participants/Team – 1</p>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="box" id="hv-5"><img src="images/event-logos/prezipitate.png" class="logo">
-					<div class="hov-con">
-						<div class="text">Junior Presentation</div>
-					</div>
-					<div class="modal" id="myModal-05">
-						<div class="modal-content">
-							<p class="tagline">“Ctrl + M…. and here we go!”</p>
-							<p class="evnt-info">Students will make a 3 min presentation and send it to us at
-								mpasricha@aisg43.amity.edu. Only selected teams will battle out for the prizes. Anything
-								except clip art and tools of powerpoint are not allowed. Videos should not be used.<br>
-								<b><u>Topic</u>: Online Education</b><br>
-								Eligibility: V-VI<br>
-							</p>
-							<p class="team-eligibility">No of Teams/School – 1<br>No. of Participants/Team – 1</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="box" id="hv-6"><img src="images/event-logos/sway.jpg" class="logo">
-					<div class="hov-con">
-						<div class="text">Sway</div>
-					</div>
-					<div class="modal" id="myModal-06">
-						<div class="modal-content">
-							<p class="tagline">“Share what Animates you”</p>
-							<p class="evnt-info">A sway needs to be submitted online to syadav@aisg43.amity.edu on given
-								topic. Your creativity is your weapon.<br>
-								<b><u>Topic</u>: Global Technology</b><br>
-								Eligibility: VII-VIII<br>
-							</p>
-							<p class="team-eligibility">No of Teams/School – 1<br>No. of Participants/Team – 1</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="box" id="hv-8"><img src="images/event-logos/clickhe.png" class="logo">
-					<div class="hov-con">
-						<div class="text">Photography</div>
-					</div>
-					<div class="modal" id="myModal-08">
-						<div class="modal-content">
-							<p class="tagline">“Pics or it didn’t happen”</p>
-							<p class="evnt-info">
-								For the event, three pictures need to be submitted online. Entry needs to be submitted
-								at sjoshi@aisg43.amity.edu  on the topic.<br>
-								Please make sure to not to use copyright content.<br>
-								<b><u>Topic</u>: Nature at the time of Corona</b><br>
-								Eligibility: IX-X
-							</p>
-							<p class="team-eligibility">No of Teams/School – 1<br>No. of Participants/Team – 1</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="box" id="hv-10"><img src="images/event-logos/opus.png" class="logo">
-					<div class="hov-con">
-						<div class="text">Web Development</div>
-					</div>
-					<div class="modal" id="myModal-10">
-						<div class="modal-content">
-							<p class="tagline">“What separates design from art is that design is meant to be…
-								functional.”</p>
-							<p class="evnt-info">Upload the entry on Google Drive/Drop box and email the link to
-								sjoshi@aisg43.amity.edu. Only selected teams will battle out for prizes. Besides the
-								originality and appeal of the design, functionality and creativity will be fetching
-								points.<br>
-								<b>And remember, your &lt;html&gt; code should be spic n’ &lt;span&gt; ;)</b><br>
-								<b>Languages:</b>*HTML, CSS, Javascript, Jquery<br>
-								<b>Software provided:</b>Sublime Text, Adobe Photoshop<br>
-								*Participants are advised to refrain from using templates and copying code.<br>
-								Eligibility – IX-X<br>
-							</p>
-							<p class="team-eligibility">No of Teams/School – 1<br>No. of Participants/Team – 1</p>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="box" id="hv-12"><img src="images/event-logos/chalchitra.jpg" class="logo">
-					<div class="hov-con">
-						<div class="text">Movie Making</div>
-					</div>
-					<div class="modal" id="myModal-12">
-						<div class="modal-content">
-							<p class="tagline">“Everybody is special. But not today, because today, we give you the
-								story.”</p>
-							<p class="evnt-info">Participants will be given theme (at 11 AM on 23 rd May) on which they
-								have to make a video of 1 min which should be submitted by 1 PM on 23 rd May.<br>
-								<b>Late submissions will not be entertained.</b><br>
-								Open choice for accessories and software but it has to be submitted only in <b>MP4
-									format</b>.<br>
-								Only <b>original</b> and <b>fresh content</b> will be accepted, the usage of
-								<b>English</b> or <b>Hindi</b> both are permitted.<br>
-								The video should not just be random clips and should have an element of <b>story</b> or
-								a <b>concept</b>. No socially offensive content will be permitted. In terms of conflict,
-								the event head will give the final decision and breaking of rules will result in
-								<b>disqualification.</b><br>
-								Video has to be uploaded to <b>Youtube</b> or <b>drive</b> and the links should be
-								shared by the form. The link for the form is: https://bit.ly/3aBGYZe<br>
-								Eligibility – XI-XII<br>
-							</p>
-							<p class="team-eligibility">No of Teams/School – 1<br>No. of Participants/Team – 1</p>
-						</div>
-					</div>
-				</div>
-
 			</div>
+			
+			<div class="box" id="hv-4"><img src="images/event-logos/logo.jpeg" class="logo"><div class="hov-con"><div class="text">LOGO</div></div>
+				<div class="modal" id="myModal-04">
+					<div class="modal-content">
+						<p class="tagline">“Programming isn’t about what you know; it’s about what you can figure out”</p>
+						<p class="evnt-info">Students will create a graphic using MSW Logo. Convert your file into JPEG and will send that on mpasricha@aisg43.amity.edu.<br>
+						<b><u>Topic</u>: My City</b><br>
+						Eligibility: III-IV
+						</p>
+						<p class="team-eligibility">No of Teams/School – 1 <br> No. of Participants/Team – 1</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="box" id="hv-5"><img src="images/event-logos/prezipitate.png" class="logo"><div class="hov-con"><div class="text">Junior Presentation</div></div>
+				<div class="modal" id="myModal-05">
+					<div class="modal-content">
+						<p class="tagline">“Ctrl + M…. and here we go!”</p>
+						<p class="evnt-info">Students will make a 3 min presentation and send it to us at mpasricha@aisg43.amity.edu. Only selected teams will battle out for the prizes. Anything except clip art and tools of powerpoint are not allowed. Videos should not be used.<br>
+						<b><u>Topic</u>: Online Education</b><br>
+						Eligibility: V-VI<br>
+						</p>
+						<p class="team-eligibility">No of Teams/School – 1<br>No. of Participants/Team – 1</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="box" id="hv-6"><img src="images/event-logos/sway.jpg" class="logo"><div class="hov-con"><div class="text">Sway</div></div>
+				<div class="modal" id="myModal-06">
+					<div class="modal-content">
+						<p class="tagline">“Share what Animates you”</p>
+						<p class="evnt-info">A sway needs to be submitted online to syadav@aisg43.amity.edu on given topic. Your creativity is your weapon.<br>
+							<b><u>Topic</u>: Global Technology</b><br>
+							Eligibility: VII-VIII<br>
+							</p>
+						<p class="team-eligibility">No of Teams/School – 1<br>No. of Participants/Team – 1</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="box" id="hv-8"><img src="images/event-logos/clickhe.png" class="logo"><div class="hov-con"><div class="text">Photography</div></div>
+				<div class="modal" id="myModal-08">
+					<div class="modal-content">
+						<p class="tagline">“Pics or it didn’t happen”</p>
+						<p class="evnt-info">
+							For the event, three pictures need to be submitted online. Entry needs to be submitted at sjoshi@aisg43.amity.edu  on the topic.<br>
+							Please make sure to not to use copyright content.<br>
+							<b><u>Topic</u>: Nature at the time of Corona</b><br>
+							Eligibility: IX-X
+						</p>
+						<p class="team-eligibility">No of Teams/School – 1<br>No. of Participants/Team – 1</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="box" id="hv-10"><img src="images/event-logos/opus.png" class="logo"><div class="hov-con"><div class="text">Web Development</div></div>
+				<div class="modal" id="myModal-10">
+					<div class="modal-content">
+						<p class="tagline">“What separates design from art is that design is meant to be… functional.”</p>
+						<p class="evnt-info">Upload the entry on Google Drive/Drop box and email the link to sjoshi@aisg43.amity.edu. Only selected teams will battle out for prizes. Besides the originality and appeal of the design, functionality and creativity will be fetching points.<br>
+							<b>And remember, your &lt;html&gt; code should be spic n’ &lt;span&gt; ;)</b><br>
+							<b>Languages:</b>*HTML, CSS, Javascript, Jquery<br>
+							<b>Software provided:</b>Sublime Text, Adobe Photoshop<br>
+							*Participants are advised to refrain from using templates and copying code.<br>
+							Eligibility – IX-X<br>
+						</p>
+						<p class="team-eligibility">No of Teams/School – 1<br>No. of Participants/Team – 1</p>
+						</div>
+				</div>
+			</div>
+		
+				
+			<div class="box" id="hv-12"><img src="images/event-logos/chalchitra.jpg" class="logo"><div class="hov-con"><div class="text">Movie Making</div></div>
+				<div class="modal" id="myModal-12">
+					<div class="modal-content">
+						<p class="tagline">“Everybody is special. But not today, because today, we give you the story.”</p>
+						<p class="evnt-info">Participants will be given theme (at 11 AM on 23 rd May) on which they have to make a video of 1 min which should be submitted by 1 PM on 23 rd May.<br>
+							<b>Late submissions will not be entertained.</b><br>
+							Open choice for accessories and software but it has to be submitted only in <b>MP4 format</b>.<br>
+							Only <b>original</b> and <b>fresh content</b> will be accepted, the usage of <b>English</b> or <b>Hindi</b> both are permitted.<br>
+							The video should not just be random clips and should have an element of <b>story</b> or a <b>concept</b>. No socially offensive content will be permitted. In terms of conflict, the event head will give the final decision and breaking of rules will result in <b>disqualification.</b><br>
+							Video has to be uploaded to <b>Youtube</b> or <b>drive</b> and the links should be shared by the form. The link for the form is: https://bit.ly/3aBGYZe<br>
+						Eligibility – XI-XII<br>
+						</p>
+						<p class="team-eligibility">No of Teams/School – 1<br>No. of Participants/Team – 1</p>
+					</div>
+				</div>
+			</div>
+		
 		</div>
 	</div>
+</div>
 
 
-	<div class="fourth-big" id="dates" align="center">
-		<p class="heading">Important Dates</p>
-		<p class="imp-info">The buzz won't be just the same, but better and bigger than ever.<br>All only if you know
-			what it means to punctual, and deadline-fearing warrior!</p>
-		<p class="btn-btm"></p>
-		<img src="images/buzx.jpg" class="imp-img">
-	</div>
+<div class="fourth-big" id = "dates" align="center">
+	<p class="heading">Important Dates</p>
+	<p class="imp-info">The buzz won't be just the same, but better and bigger than ever.<br>All only if you know what it means to punctual, and deadline-fearing warrior!</p><p class="btn-btm"></p>
+	<img src="images/buzx.jpg" class="imp-img">
+</div>
 
-	<div class="fourth-big" id="dates" align="center">
-		<p class="heading">Intro Video</p>
-		<p class="btn-btm"></p>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/3nlzXS2uhFk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
-		<p> Created and Edited by Saansh Arora and Shubh Mehtani
-	</div>
+<div class="skew-div"></div>
 
-	<!-- <div class="skew-div"></div> -->
-
-	<div class="fifth-big" align="center">
-		<p class="heading" id="team">Our Team</p>
-		<p class="imp-info">Everyone who makes Cyber Buzz what it is!
-			Never underestimate those whom you don’t know as they might be the ones who decide the winners and the not
-			so winning winners</p>
-		<p class="btn-btm"></p>
-		<br><br>
-		<br><br>
-		<h1 style="font-family: 'Raleway';font-weight: 800;font-size: 28px;padding-top: 30px;padding-bottom: 30px;background:-webkit-linear-gradient(90deg, rgb(52, 73, 94) 0%, rgb(73, 75, 73) 80%);
+<div class="fifth-big" align="center">
+	<p class="heading" id = "team">Our Team</p>
+	<p class="imp-info">Everyone who makes Cyber Buzz what it is!
+Never underestimate those whom you don’t know as they might be the ones who decide the winners and the not so winning winners</p>
+	<p class="btn-btm"></p>
+  <br><br>
+  <br><br>
+  <h1 style="font-family: 'Raleway';font-weight: 800;font-size: 28px;padding-top: 30px;padding-bottom: 30px;background:-webkit-linear-gradient(90deg, rgb(52, 73, 94) 0%, rgb(73, 75, 73) 80%);
 background:-o-linear-gradient(90deg, rgb(52, 73, 94) 0%, rgb(73, 75, 73) 80%);
 background:-moz-linear-gradient(90deg, rgb(52, 73, 94) 0%, rgb(73, 75, 73) 80%);
 background:linear-gradient(90deg, rgb(52, 73, 94) 0%, rgb(73, 75, 73) 80%);color: white">Presidential Board</h1>
-		<br><br>
-		<div class="teambox">
+<br><br>
+  <div class="teambox" >
 
 
      <div class="tbox" style="padding-top: 20px">
@@ -332,160 +227,104 @@ background:linear-gradient(90deg, rgb(52, 73, 94) 0%, rgb(73, 75, 73) 80%);color
          <a href="https://www.instagram.com/sa.rtha.k/" target="_blank">
          <img src="images/memb/sarthak.jpg" class="memb"><div class="mem">
      <div class = "mem-name">getsarthakaggarwal@gmail.com</div></div></a><span class = "mem-name-end">Sarthak Aggarwal</span><br><span class="mem-evnt">Opus</span></div>
-			<div class="tbox" style="padding-top: 20px">
 
-				<span class="designation" style="font-family: 'Raleway';font-weight: 400">President</span><br><br>
-				<a href="https://www.instagram.com/sa.rtha.k/" target="_blank">
-					<img src="images/memb/sarthak.jpg" class="memb">
-					<div class="mem">
-						<div class="mem-name">getsarthakaggarwal@gmail.com</div>
-					</div>
-				</a><span class="mem-name-end">Sarthak Aggarwal</span><br><span class="mem-evnt">Opus</span></div>
+   
 
+  </div>
 
+  <div class="teambox" >
 
-		</div>
+  <div class="tbox"  style="padding-top: 1px"> <span class = "designation" style="font-family: 'Raleway';font-weight: 400">  Vice-President</span><br><br>
+	<a href="https://www.instagram.com/tushu0___0/" target="_blank">
+	<img src="images/memb/tushar.jpeg" class="memb"><div class="mem">
+<div class = "mem-name">tusharnaruto007@gmail.com
+</div></div></a><span class = "mem-name-end">Tushar Chopra</span><br><span class="mem-evnt">Chalchitra></span></div>
 
-		<div class="teambox">
-
-			<div class="tbox" style="padding-top: 1px"> <span class="designation"
-					style="font-family: 'Raleway';font-weight: 400"> Vice-President</span><br><br>
-				<a href="https://www.instagram.com/tushu0___0/" target="_blank">
-					<img src="images/memb/tushar.jpeg" class="memb">
-					<div class="mem">
-						<div class="mem-name">tusharnaruto007@gmail.com
-						</div>
-					</div>
-				</a><span class="mem-name-end">Tushar Chopra</span><br><span class="mem-evnt">Chalchitra</span></div>
-
-			<div class="tbox" style="padding-top: 1px"> <span class="designation"
-					style="font-family: 'Raleway';font-weight: 350"> Deputy VP</span><br><br>
-				<a href="https://www.instagram.com/aviral_0107/" target="_blank"><img src="images/memb/aviral.jpeg"
-						class="memb">
-					<div class="mem">
-						<div class="mem-name"> aviralgupta010704@gmail.com </div>
-					</div>
-				</a><span class="mem-name-end">Aviral Gupta</span><br><span class="mem-evnt">Opus</span></div>
-		</div>
-		<br><br>
-		<h1 style="font-family: 'Raleway';font-weight: 800;font-size: 28px;padding-top: 30px;padding-bottom: 30px;background:-webkit-linear-gradient(90deg, rgb(52, 73, 94) 0%, rgb(73, 75, 73) 80%);
+<div class="tbox" style="padding-top: 1px"> <span class = "designation" style="font-family: 'Raleway';font-weight: 350"> Deputy VP</span><br><br>
+	<a href="https://www.instagram.com/aviral_0107/" target="_blank"><img src="images/memb/aviral.jpeg" class="memb"><div class="mem">
+<div class = "mem-name">akshatsax001@outlook.com</div></div></a><span class = "mem-name-end">Aviral Gupta</span><br><span class="mem-evnt">Opus</span></div>
+  </div>
+  <br><br>
+  <h1 style="font-family: 'Raleway';font-weight: 800;font-size: 28px;padding-top: 30px;padding-bottom: 30px;background:-webkit-linear-gradient(90deg, rgb(52, 73, 94) 0%, rgb(73, 75, 73) 80%);
 background:-o-linear-gradient(90deg, rgb(52, 73, 94) 0%, rgb(73, 75, 73) 80%);
 background:-moz-linear-gradient(90deg, rgb(52, 73, 94) 0%, rgb(73, 75, 73) 80%);
 background:linear-gradient(90deg, rgb(52, 73, 94) 0%, rgb(73, 75, 73) 80%);color: white">Directorial Board</h1>
-		<br><br>
+<br><br>
 
-		<div class="teambox">
-			<a href="https://www.youtube.com/thetword" target="_blank">
-				<div class="tbox"><img src="images/memb/vidun.jpeg" class="memb">
-					<div class="mem">
-						<div class="mem-name">var7.vidun@gmail.com</div>
-					</div>
-			</a><span class="mem-name-end">Vidunram AR</span><br><span class="mem-evnt">Logic Gate</span></div>
-		<div class="tbox"><img src="images/memb/sashreek.jpg" class="memb">
-			<div class="mem">
-				<div class="mem-name"></div>
-			</div><span class="mem-name-end">Sashreek Das</span><br><span class="mem-evnt">Clic(k)he</span>
-		</div>
-		<div class="tbox"><img src="images/memb/atharva.jpeg" class="memb">
-			<div class="mem">
-				<div class="mem-name">yadav.atharva99@gmail.com</div>
-			</div><span class="mem-name-end">Atharva Yadav</span><br><span class="mem-evnt">Opus</span>
-		</div>
-		<div class="tbox"><img src="images/memb/suvidha.jpeg" class="memb">
-			<div class="mem">
-				<div class="mem-name"></div>
-			</div><span class="mem-name-end">Suvidha Srivastava</span><br><span class="mem-evnt">Chalchitra</span>
-		</div>
-		<div class="tbox"><img src="images/memb/akshat.jpeg" class="memb">
-			<div class="mem">
-				<div class="mem-name"></div>
-			</div><span class="mem-name-end">Akshat Trehan</span><br><span class="mem-evnt">LogicGate</span>
-		</div>
-		<div class="tbox"><img src="images/memb/rituraj.jpeg" class="memb">
-			<div class="mem">
-				<div class="mem-name"></div>
-			</div><span class="mem-name-end">Rituraj Chowdhary</span><br><span class="mem-evnt">LogicGate</span>
-		</div>
-			
-			<div class="tbox"><img src="images/memb/rathore.jpg" class="memb">
-			<div class="mem">
-				<div class="mem-name"></div>
-			</div><span class="mem-name-end">Aaditya Rathore</span><br><span class="mem-evnt">Chalchitra</span>
-		</div>
+	<div class="teambox">
+		<a href="https://www.youtube.com/thetword" target="_blank">
+		<div class="tbox"><img src="images/memb/vidun.jpeg" class="memb"><div class="mem">
+		<div class = "mem-name">saansharora3@gmail.com</div></div></a><span class = "mem-name-end">Vidunram AR</span><br><span class="mem-evnt">Logic Gate</span></div>
+		<div class="tbox"><img src="images/memb/sashreek.jpg" class="memb"><div class="mem">
+		<div class = "mem-name">yadav.atharva99@gmail.com</div></div><span class = "mem-name-end">Sashreek Das</span><br><span class="mem-evnt">Clic(k)he</span></div>
+		<div class="tbox"><img src="images/memb/atharva.jpeg" class="memb"><div class="mem">
+		<div class = "mem-name">araghav2003@gmail.com</div></div><span class = "mem-name-end">Atharva Yadav</span><br><span class="mem-evnt">Opus</span></div>
+		<div class="tbox"><img src="images/memb/suvidha.jpeg" class="memb"><div class="mem">
+		<div class = "mem-name">jaimehtani26@gmail.com</div></div><span class = "mem-name-end">Suvidha Srivastava</span><br><span class="mem-evnt">Chalchitra</span></div>
+		<div class="tbox"><img src="images/memb/akshat.jpeg" class="memb"><div class="mem">
+		<div class = "mem-name">abkumar5411@gmail.com</div></div><span class = "mem-name-end">Akshat Trehan</span><br><span class="mem-evnt">LogicGate</span></div>
+		<div class="tbox"><img src="images/memb/rituraj.jpeg" class="memb"><div class="mem">
+			<div class = "mem-name">abkumar5411@gmail.com</div></div><span class = "mem-name-end">Rituraj Chowdhary</span><br><span class="mem-evnt">LogicGate</span></div>
+	
 
-
-
+	
 
 
 	</div>
 
+</div>
+
+ <div class="schedule" id = "schedule" align="center">
+	<p class="heading-sch">Our Schedule</p>
+	<img src="images/finale.png" class="sch-img">
+</div>
+
+
+<div class="footer" id="contact">
+	<div class="footer-table"><table>
+		<tbody>
+			<tr><td class="ftr-data">Organiser:</td><td class="ftr-data">Amity International School<br>Power Grid Complex<br>Sector-43, Gurugram<br></td></tr>
+			<tr><td class="ftr-data">Timings:</td><td class="ftr-data">11 AM to 5 PM</td></tr>
+		</tbody>
+	</table></div>
+
+	<div class="links">Email : amitycyberbuzz@gmail.com<br> Facebook: <a class = "link-fb" href="https://fb.com/amitycyberbuzz">fb.com/amitycyberbuzz</a><br>
+		Instagram: <a class = "link-fb" href="https://instagram.com/cyberbuzz2020">instagram.com/cyberbuzz2020</a><br>
+		Official Invite: <a class="link-fb" href="http://bit.ly/cbinvitation">CyberBuzz2020</a>
 	</div>
+	<div class="last-logo"><img src="images/logo.png" class="last-logo-img"></div>
+</div>
 
-	<div class="schedule" id="schedule" align="center">
-		<p class="heading-sch">Our Schedule</p>
-		<img src="images/CB20Schedule.png" class="sch-img">
-	</div>
-
-
-	<div class="footer" id="contact">
-		<div class="footer-table">
-			<table>
-				<tbody>
-					<tr>
-						<td class="ftr-data">Organiser:</td>
-						<td class="ftr-data">Amity International School<br>Power Grid Complex<br>Sector-43, Gurugram<br>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-
-		<div class="links">Email : amitycyberbuzz@gmail.com<br> Facebook: <a class="link-fb"
-				href="https://fb.com/amitycyberbuzz">fb.com/amitycyberbuzz</a><br>
-			Instagram: <a class="link-fb" href="https://instagram.com/cyberbuzz2020">instagram.com/cyberbuzz2020</a><br>
-		</div>
-		<div class="last-logo"><img src="images/logo.png" class="last-logo-img"></div>
-	</div>
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kryogenix.org/code/browser/smoothscroll/smoothscroll.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 
 
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://kryogenix.org/code/browser/smoothscroll/smoothscroll.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
-		integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
-	<script>
-		// Set the date we're counting down to
-		var countDownDate = new Date("May 23, 2020 11:00:00").getTime();
-		// Update the count down every 1 second
-		var x = setInterval(function () {
-			// Get todays date and time
-			var now = new Date().getTime();
-			// Find the distance between now an the count down date
-			var distance = countDownDate - now;
-			// Time calculations for days, hours, minutes and seconds
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-			// Output the result in an element with id="demo"
-			document.getElementById("time-set").innerHTML = days + ":" + hours + ":"
-				+ minutes + ":" + seconds;
-			// If the count down is over, write some text
-			if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("time-set").innerHTML = "Get ready";
-			}
-		}, 1000)
-	</script>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 23, 2020 11:00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+    // Get todays date and time
+    var now = new Date().getTime();
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Output the result in an element with id="demo"
+    document.getElementById("time-set").innerHTML = days + ":" + hours + ":"
+    + minutes + ":" + seconds;
+    // If the count down is over, write some text
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("time-set").innerHTML = "Get ready";
+    }
+}, 1000);
+</script>
 </body>
-
 </html>
